@@ -1,0 +1,26 @@
+# Singleton Pattern
+------------------------
+
+- is a creational design pattern
+- it lets you ensure that a class has only one instance while providing a global access point to this
+  instance. 
+- it ensures that a given class has just a single instance. 
+- the singleton pattern provides a global access point to that given instance. 
+
+
+                          ----------- Class #1      All other classes and modules can access this single object.
+Instance ---------------- ----------- Class #2                Problem 
+                          ----------- Class #3
+                                      .
+                                      .
+                                      .
+                                      .
+                                      .
+                                      Class #N
+"this is the single object
+ (singleton)"
+
+ When to use the singleton pattern?
+
+ - we can control access to a shared resource such as files, databases or thread pools (when dealing with multithreading)
+ - it is extremely crucial in logging. 

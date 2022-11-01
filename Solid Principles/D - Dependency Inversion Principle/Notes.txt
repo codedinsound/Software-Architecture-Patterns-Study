@@ -1,0 +1,43 @@
+
+
+
+"Usually the low level modules rely heavily on high level modules (Bottom Up Software Development). 
+
+- when implementing an pplication we start with the low level software components. 
+- then we implement the high level modules that rely on these low level modules. 
+
+
+                    Architecture 
+
+                    Application                       High level modules depending on low level implementations
+                        |
+                        |
+                        |
+        Bluetooth     XML Parser       SQL            these are the low levels 
+
+
+Conclusion: "High-Level modules should not depend on low-level modules. Both should depend on abstractions."
+
+            "Abstractions should not depend on details. Details (concrete implementations) should depend
+            on abstractions."
+
+
+                    Architecture 
+
+                    Application                       High level modules depending on low level implementations
+                        |
+                        |
+                    Abstraction Layer
+                        |
+                        |
+        Bluetooth     XML Parser       SQL            these are the low levels 
+
+- what if we want to change the low level implementation? 
+- in these cases we have to change the high level modules as well
+- this is why we should use abstraction (interfaces and abstract classes). 
+
+// We should not instantiate anymore like this 
+Dog dog = new Dog(); 
+
+// We should be instantiating into a interface instead. 
+Animal dog = new Dog(); 

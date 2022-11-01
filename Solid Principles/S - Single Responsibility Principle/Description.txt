@@ -1,0 +1,23 @@
+
+
+
+Every Class has a single behaviour or operation. 
+You can also accomplish this with methods in which operations are split into seperate methods each pertaining to 
+a single operation. Like reading in or validating. 
+
+Tight Coupling
+--------------------
+Classes are highly dependent on one another
+
+This is typically happens when the classes have to many responsibilities. 
+
+
+Loosely Coupling 
+--------------------
+Classes are independent of each other 
+
+interfaces (abstraction) are quite powerful tools to achieve this feature 
+
+it can be done with the help of the SOLID principles. 
+
+"Every class (or method) in a computer program should have a responsibility over a single part of that programs functionality which it should encapsulate. 

@@ -1,0 +1,38 @@
+
+
+NOTE: Objects of a superclass shall be replacable with objects of its subclasses without breaking the application. 
+
+- what is the motivation behind Liskov Principle?
+
+    we usually create hierchies during the application development 
+
+- we extend some classes and creating some derived classes
+- it would be great if the new derived classed would work as well without replacing the functionaility of the classes. 
+- otherwise the new classes can produce undesired effects when they are used in existing program modules. 
+
+Objects of a superclass shall be replacable with objects of it's subclasses without breaking the application.
+
+public class Vehicle {
+  .............
+}
+
+
+public class extends Vehicle {
+  .............
+}
+
+substitution priciple 
+
+run(Car c) {
+  .......
+}
+
+we have to make sure there will be no problems using the subtype or the original class
+
+do not break functionility and we can call the methods anyway. 
+
+There are 2 important design patterns that can guarantee that the Liskov substiution principle is not violated:
+
+1.) strategy pattern - SOLID principles are not independent of each other. 
+
+2.) template pattern - the violation of the Liskov Principle is a latent violation open/closed principle. 

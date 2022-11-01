@@ -1,0 +1,29 @@
+
+
+Prototype Pattern 
+---------------------
+- what is the motivation behind prototype pattern? 
+- the aim is to be able to copy existing objects without depending on those given classes.
+- we can consider all the variables of the given object and copy the value on by one. 
+
+          - There may be private variables and there may be abstract layers as well.
+
+- usually we program to an interface or a supertype - it is good object-oriented design principle. 
+
+  Animal dog = new Dog(); 
+
+in these cases (when we have the interface) we have access to the methods and variables that
+are defined in the interface. 
+
+This is the drawback of abstraction. 
+
+- the solution is that we have to delegate the object creation problem to the object itself. 
+
+        - this operation is called cloning
+
+- the clone method creates a new instance with all the field values 
+- an object that supports the cloning operation is called prototype 
+- in Java we have to implement the Clonable interface and define the clone() method. 
+
+- sometimes we can elimate inheritance with prototype pattern. 
+- especially when dealing with complex objects - do not want to bother with configuration     issues.

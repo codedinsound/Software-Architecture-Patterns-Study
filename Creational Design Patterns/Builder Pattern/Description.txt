@@ -1,0 +1,33 @@
+Builder Pattern
+----------------------
+- builder pattern is maybe the #1 design pattern in software engineering.
+- what is the motivation behind builder pattern. 
+
+
+- using several parameters in the constructor and getters / setters 
+- these are not extensible solutions
+- if we want to add another optional parameter then we have to add another constructor.
+
+- ,,Telescoping constructors" 
+
+we just have to add a single 
+method - If we use builder pattern. 
+
+public Person() {
+
+}
+
+public Person(String filename, String lastName) {
+
+}
+
+public Person(int age, Gender gender, String dateOfBirth, String firstName, String lastName, String nameOfMother, Address address, PhoneNumber number)
+==================================================================
+- the builder pattern satisfies the immutable property
+- here we create the object itself at the last step 
+
+Person p = new Person.Builder().setAge(12).setName(,,Keven").build(); 
+
+- there can not be any problem because of concurrent updates - when dealing with 
+  multiple threads or processes 
+- we construct the object as the last step of the process builder pattern. 

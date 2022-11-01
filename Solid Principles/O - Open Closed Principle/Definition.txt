@@ -1,0 +1,33 @@
+O - Open / Closed Principle
+-----------------------------
+- what is the motivation behind solid priciples?
+
+  * unfortunetely during software development there will be several changes and updates!!!
+
+- an application should take care of the frequent changes that are done during the development and the maintaince phases. 
+
+- for example adding new features. 
+
+---------------------------
+- changes in the existing code should be minimized
+- it's assumed that the exisiting code is already united tested. 
+- and changes in already written code might affect the the existing functionaility in an unwanted manner. 
+
+Cycle 
+Implementing Classes and Modules <--------------------------> testing the modules. (unit tests)
+
+Definition: 
+
+Open Closed Principle states that the design and writing of the code should be done in a way that new functionailty 
+should be added with minimum changes in the exisiting code. We should keep as much existing code unchanged as possible. 
+
+
+Software entities should be open for extension, but closed for modification. 
+
+There are 2 important design patterns that can guarantee that the open closed principle is not violated: 
+
+        1) Strategy Pattern 
+
+        2) Template Pattern 
+
+Abstract Date Type Defines the behaviour without the implementation. 

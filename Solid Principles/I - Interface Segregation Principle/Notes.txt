@@ -1,0 +1,18 @@
+
+- We use serveral interfaces or abstract classes in order to achieve abstraction.
+
+- sometimes we want to implement a given interface but just for the sake of methods defined by that inteface
+- we can end up with fat interfaces - containing more methods than the actual class needs. 
+
+"Software modules (classes and methods) should not be forced to depend upon interfaces that they do not use"
+
+
+What does it mean 
+-----------------------
+- it is not good if an interface has a large number of methods
+- we should seperate the methods accordingly 
+
+"In Java a given class may implement as many interfaces as we want (!!!). 
+
+- no client should be forced to depend on methods it does not use. 
+- when it is possible we should break our interfaces in many smaller ones so they better satisfy the exact needs of our clients. 

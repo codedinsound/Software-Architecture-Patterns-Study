@@ -1,0 +1,21 @@
+
+
+We should avoid tightly coupled code -> creating an object of a class with new keyword results a class being tightly coupled to another class.
+
+public class Person {
+    private Address address; 
+
+    public Person() {
+        this.address = new Address(); // Tigthly Coupled dependency
+    }
+}
+
+-> creating an object of a class with new keyword results in a class being tightly coupled to anther class. 
+-> dependency inversion principle helps to create loosely coupled software modules.
+-> modules should depend on abstraction!!!
+
+
+In object oriented programming we can implement inversion of control several ways. 
+-> using design patterns: factory, template or strategy patterns 
+-> usign service locator pattern
+-> using dependency injection. 

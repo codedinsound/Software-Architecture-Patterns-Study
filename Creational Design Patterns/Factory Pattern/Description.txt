@@ -1,0 +1,50 @@
+# Factory Pattern
+
+- factory pattern helps to create loosely coupled OOP design.
+- there is a fundamental problem with the new keyword
+
+"We should favor abstraction (supertypes) instead of concreate implementations"
+
+- whenever we use the new keyword (and instantiate a class) we definitely violate this principle
+
+- tying our code to concreate classes makes the application less flexible and more fragile. 
+
+
+For Example
+----------
+- if we program to an interface - the code will work fine with any other class implementing that interface. 
+
+      Animal dog = new Dog(); 
+
+  it is working fine because we program to an interface (instead of concrete classes) but the Dog class my change in the future.
+
+    Use the following
+
+      Animal dog = AnimalFactory.getDog();
+
+  this is why we should seperate the static classes in the application from the classes that change frequently (we can encapsulate object createion)
+
+  We can instantiate the classes in a seperate class - factory pattern
+
+
+# Abstract Factory Pattern
+------------------------------------
+- factories that creates other factories (factories of the factories)
+- it is an interface is responsible for creating a factory of 
+  related objects without explicitly specifying their classes. 
+
+
+                      Abstract Factory
+                            |
+                            |
+                            |
+                 -------------------------- 
+                 |                        |
+                 |                        |
+            PetrolFactory             Electric Factory
+                 |                        |
+                 |                        |
+            --------------            --------------
+            |            |            |             |
+            |            |            |             |
+          Ford          Toyota      Ford           Toyota
