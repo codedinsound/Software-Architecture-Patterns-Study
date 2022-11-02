@@ -23,6 +23,7 @@ function main() {
   // -------------------------------------------------------------------------------------
   // BehavioralDesignTesting.testStrategyPattern();
   // BehavioralDesignTesting.testObserverPattern();
+  BehavioralDesignTesting.testCommandPattern();
   // -------------------------------------------------------------------------------------
   //
   // -------------------------------------------------------------------------------------
