@@ -17,5 +17,5 @@
  *   - the user interface components know nothing about the underlaying
  *   - and we can change the sender's behaviour at run-time.
  * 
- *   
+ *   - change
  */
