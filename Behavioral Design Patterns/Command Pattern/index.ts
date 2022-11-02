@@ -6,8 +6,8 @@
  *
  *
  *
- *     APPLICATION <----------C------------- Save Button
- *                            o
+ *   APPLICATION <----------C------------- Save Button
+ *                          o
  *   business logic <---------m------------- Update Button
  *                  <---------m------------- Delete Button
  *                            a
@@ -17,7 +17,18 @@
  *   - the user interface components know nothing about the underlaying
  *   - and we can change the sender's behaviour at run-time.
  *
- *   - change
+ *   ADVANTAGES OF COMMAND PATTERN
+ *  - We do not have to execute the commands immediately - we can store these commands in a data structure
+ *  - we can implement undo / redo operations
+ *
+ *   COMMAND - it knows about receiver and invokes a method of the receiver. The values for paramenters of the
+ *             receiver method are stored in the command
+ *
+ *   RECEIVER - it does the work iteself
+ *
+ *   INVOKER - knows how to execute a command and optionally does bookeeping about the command execution
+ *             The invoker does not know anything about a concrete command it knows only about command interface.
+ *
  */
 
 interface Command {
@@ -66,9 +77,15 @@ class Switcher {
     this.commands = new Map<Command, Command>();
   }
 
+  addCommand(command: Command): void {
+    this.commands.set(command, command);
+  }
+
   public executeCommands(): void {
-    for (const command in this.commands.values()) {
+    for (const command of this.commands.values()) {
       command.execute();
     }
   }
 }
+
+export { Command, Light, TurnOffCommand, TurnOnCommand, Switcher };

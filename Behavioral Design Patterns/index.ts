@@ -1,4 +1,10 @@
 import {
+  Light,
+  Switcher,
+  TurnOffCommand,
+  TurnOnCommand,
+} from '../Behavioral Design Patterns/Command Pattern';
+import {
   BuyStockListener,
   SellStockListener,
   StockExchange,
@@ -45,6 +51,18 @@ class BehavioralDesignTesting {
   // --------------------------------------------------------------------------------
   // MARK: Command Pattern
   // --------------------------------------------------------------------------------
+  static testCommandPattern(): void {
+    const switcher = new Switcher();
+
+    const light = new Light();
+    const onCommand = new TurnOnCommand(light);
+    const offCommand = new TurnOffCommand(light);
+
+    switcher.addCommand(onCommand);
+    switcher.addCommand(offCommand);
+
+    switcher.executeCommands();
+  }
 }
 
 export default BehavioralDesignTesting;
