@@ -5,6 +5,10 @@ import {
   TurnOnCommand,
 } from '../Behavioral Design Patterns/Command Pattern';
 import {
+  IteratorPattern,
+  NameRepository,
+} from '../Behavioral Design Patterns/Iterator Pattern';
+import {
   BuyStockListener,
   SellStockListener,
   StockExchange,
@@ -62,6 +66,16 @@ class BehavioralDesignTesting {
     switcher.addCommand(offCommand);
 
     switcher.executeCommands();
+  }
+  // --------------------------------------------------------------------------------
+  // MARK: Iterator Pattern
+  // --------------------------------------------------------------------------------
+  static testIteratorPattern(): void {
+    let repo = new NameRepository();
+
+    for (let it: IteratorPattern = repo.getIterator(); it.hasNext(); ) {
+      console.log(it.next());
+    }
   }
 }
 
