@@ -2,6 +2,7 @@ import './style.css';
 
 import CreationalDesignTesting from './CreationalDesignTesting';
 import BehavioralDesignTesting from './Behavioral Design Patterns';
+import StructuralDesignTesting from './Structural Design Patterns';
 // import PatternsTester from './PatternsTester';
 
 function main() {
@@ -26,10 +27,11 @@ function main() {
   // BehavioralDesignTesting.testCommandPattern();
   // BehavioralDesignTesting.testIteratorPattern();
   // BehavioralDesignTesting.testNullPattern();
-  BehavioralDesignTesting.testVisitorPattern();
+  // BehavioralDesignTesting.testVisitorPattern();
   // -------------------------------------------------------------------------------------
-  //
+  // MARK: Structural Design Patterns
   // -------------------------------------------------------------------------------------
+  StructuralDesignTesting.testDecoratorPattern();
 }
 
 main();
