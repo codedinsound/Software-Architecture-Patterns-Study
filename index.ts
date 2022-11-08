@@ -24,7 +24,8 @@ function main() {
   // BehavioralDesignTesting.testStrategyPattern();
   // BehavioralDesignTesting.testObserverPattern();
   // BehavioralDesignTesting.testCommandPattern();
-  BehavioralDesignTesting.testIteratorPattern();
+  // BehavioralDesignTesting.testIteratorPattern();
+  BehavioralDesignTesting.testNullPattern();
   // -------------------------------------------------------------------------------------
   //
   // -------------------------------------------------------------------------------------

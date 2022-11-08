@@ -8,6 +8,7 @@ import {
   IteratorPattern,
   NameRepository,
 } from '../Behavioral Design Patterns/Iterator Pattern';
+import NullTester from '../Behavioral Design Patterns/NULL Object Pattern';
 import {
   BuyStockListener,
   SellStockListener,
@@ -76,6 +77,14 @@ class BehavioralDesignTesting {
     for (let it: IteratorPattern = repo.getIterator(); it.hasNext(); ) {
       console.log(it.next());
     }
+  }
+
+  // --------------------------------------------------------------------------------
+  // MARK: Iterator Pattern
+  // --------------------------------------------------------------------------------
+
+  static testNullPattern(): void {
+    NullTester.testNullPattern();
   }
 }
 
