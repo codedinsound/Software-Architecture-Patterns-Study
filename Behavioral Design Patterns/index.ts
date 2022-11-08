@@ -23,6 +23,7 @@ import {
   OperationsManager,
   Subtraction,
 } from '../Behavioral Design Patterns/Strategy Pattern';
+import TestVistorPattern from '../Behavioral Design Patterns/Visitor Pattern';
 
 class BehavioralDesignTesting {
   // --------------------------------------------------------------------------------
@@ -80,11 +81,17 @@ class BehavioralDesignTesting {
   }
 
   // --------------------------------------------------------------------------------
-  // MARK: Iterator Pattern
+  // MARK: NULL Object Pattern
   // --------------------------------------------------------------------------------
-
   static testNullPattern(): void {
     NullTester.testNullPattern();
+  }
+
+  // --------------------------------------------------------------------------------
+  // MARK: Visitor Patthern
+  // --------------------------------------------------------------------------------
+  static testVisitorPattern(): void {
+    TestVistorPattern.test();
   }
 }
 
