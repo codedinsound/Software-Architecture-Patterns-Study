@@ -31,7 +31,8 @@ function main() {
   // -------------------------------------------------------------------------------------
   // MARK: Structural Design Patterns
   // -------------------------------------------------------------------------------------
-  StructuralDesignTesting.testDecoratorPattern();
+  // StructuralDesignTesting.testDecoratorPattern();
+  StructuralDesignTesting.testFacadePattern();
 }
 
 main();
