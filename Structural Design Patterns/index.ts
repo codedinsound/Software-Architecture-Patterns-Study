@@ -1,5 +1,6 @@
 import { TestDecoratorPattern } from '../Structural Design Patterns/Decorator Pattern';
 import { TestFacadePattern } from '../Structural Design Patterns/Facade Pattern';
+import { TestFlyweightPattern } from '../Structural Design Patterns/Flyweight Pattern';
 
 class StructuralDesignTesting {
   // --------------------------------------------------------------------------------
@@ -18,7 +19,7 @@ class StructuralDesignTesting {
   // MARK: Flyweight Pattern
   // --------------------------------------------------------------------------------
   static testFlyweightPattern() {
-    TestFacadePattern.test();
+    TestFlyweightPattern.test();
   }
 }
 
