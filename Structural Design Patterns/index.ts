@@ -1,3 +1,4 @@
+import { TestAdapterPattern } from '../Structural Design Patterns/Adapter Pattern';
 import { TestDecoratorPattern } from '../Structural Design Patterns/Decorator Pattern';
 import { TestFacadePattern } from '../Structural Design Patterns/Facade Pattern';
 import { TestFlyweightPattern } from '../Structural Design Patterns/Flyweight Pattern';
@@ -20,6 +21,13 @@ class StructuralDesignTesting {
   // --------------------------------------------------------------------------------
   static testFlyweightPattern() {
     TestFlyweightPattern.test();
+  }
+
+  // --------------------------------------------------------------------------------
+  // MARK: Adapter Pattern
+  // --------------------------------------------------------------------------------
+  static testAdapterPattern() {
+    TestAdapterPattern.test();
   }
 }
 

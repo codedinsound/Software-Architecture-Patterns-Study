@@ -33,7 +33,8 @@ function main() {
   // -------------------------------------------------------------------------------------
   // StructuralDesignTesting.testDecoratorPattern();
   // StructuralDesignTesting.testFacadePattern();
-  StructuralDesignTesting.testFlyweightPattern();
+  // StructuralDesignTesting.testFlyweightPattern();
+  StructuralDesignTesting.testAdapterPattern();
 }
 
 main();
