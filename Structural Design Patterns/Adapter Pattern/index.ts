@@ -41,6 +41,7 @@ class Bus implements Vehicle {
   }
 }
 
+// API or incompatible
 class Bicycle {
   go(): void {
     console.log('Using bicycle....');
