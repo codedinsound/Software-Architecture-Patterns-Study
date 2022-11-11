@@ -3,6 +3,7 @@ import './style.css';
 import CreationalDesignTesting from './CreationalDesignTesting';
 import BehavioralDesignTesting from './Behavioral Design Patterns';
 import StructuralDesignTesting from './Structural Design Patterns';
+import { TestServiceLocator } from './Service Locator Pattern';
 // import PatternsTester from './PatternsTester';
 
 function main() {
@@ -34,7 +35,11 @@ function main() {
   // StructuralDesignTesting.testDecoratorPattern();
   // StructuralDesignTesting.testFacadePattern();
   // StructuralDesignTesting.testFlyweightPattern();
-  StructuralDesignTesting.testAdapterPattern();
+  // StructuralDesignTesting.testAdapterPattern();
+  // -------------------------------------------------------------------------------------
+  // MARK: Service Locator Pattern
+  // -------------------------------------------------------------------------------------
+  TestServiceLocator.test();
 }
 
 main();
